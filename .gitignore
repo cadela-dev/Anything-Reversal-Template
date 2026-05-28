@@ -1,0 +1,49 @@
+# OS/editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs/temp
+*.log
+tmp/
+temp/
+.cache/
+
+# Environment/secrets
+.env
+.env.*
+!.env.example
+
+# Node/Python/cache stuff
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# User source input - keep only placeholder
+src/*
+!src/.gitkeep
+
+# Generated reversal outputs - keep folders/placeholders, not user run outputs
+docs/_file_docs/*
+!docs/_file_docs/.gitkeep
+docs/_project_index/*
+!docs/_project_index/.gitkeep
+
+assignments/*
+!assignments/.gitkeep
+
+worker_reports/*
+!worker_reports/.gitkeep
+
+verification_reports/*
+!verification_reports/.gitkeep
+
+status/*
+!status/.gitkeep
+
+# Optional generated rebuild planning/output
+clean_rebuild_plan/
+clean_rebuild/
