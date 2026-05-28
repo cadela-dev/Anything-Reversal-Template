@@ -10,10 +10,10 @@ This folder is a ready-to-use clean-room documentation workflow for any source c
    - Use the project skill `.claude/skills/index-anything-reversal/SKILL.md` if your Claude Code setup exposes skills.
 3. After indexing finishes, compact if you want.
 4. Run the continue prompt:
-   - Paste `prompts/continue_cycle.md`, or
+   - Paste `prompts/02_continue_cycle.md`, or
    - Use `.claude/skills/continue-anything-reversal/SKILL.md`.
 5. Compact between batches as needed.
-6. If anything gets weird, run `prompts/repair_batch_consistency.md`.
+6. If anything gets weird, run `prompts/03_repair_batch_consistency.md`.
 
 ## Main fix in this version
 

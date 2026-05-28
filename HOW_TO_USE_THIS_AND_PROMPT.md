@@ -5,9 +5,10 @@ This project is designed so you do **not** need to paste huge instructions every
 The detailed workflow instructions live in:
 
 * `prompts/01_index_fresh_project.md`
-* `prompts/continue_cycle.md`
-* `prompts/repair_batch_consistency.md`
+* `prompts/02_continue_cycle.md`
+* `prompts/03_repair_batch_consistency.md`
 * `prompts/04_final_verify_project.md`
+* `prompts/05_create_rebuild_plan.md`
 
 Use the short prompts below to tell Claude Code which workflow prompt to run.
 
@@ -92,7 +93,7 @@ Use this repeatedly until all files are documented.
 Paste this into Claude Code:
 
 ```text
-Read `prompts/continue_cycle.md` and execute exactly one batch.
+Read `prompts/02_continue_cycle.md` and execute exactly one batch.
 
 Process the batch pointed to by `NEXT_ASSIGNMENT.md`.
 
@@ -154,7 +155,7 @@ Use this only if a batch crashes, compacts mid-batch, stops halfway, misses mirr
 Paste this into Claude Code:
 
 ```text
-Read `prompts/repair_batch_consistency.md` and execute it exactly.
+Read `prompts/03_repair_batch_consistency.md` and execute it exactly.
 
 Repair the latest incomplete or inconsistent batch.
 

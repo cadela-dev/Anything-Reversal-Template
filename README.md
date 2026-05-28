@@ -16,8 +16,8 @@ That includes fonts, images, config files, lock files, empty files, and unknown 
 ## Prompts
 
 - `prompts/01_index_fresh_project.md` — first setup/index pass
-- `prompts/continue_cycle.md` — run one batch
-- `prompts/repair_batch_consistency.md` — repair missing mirrored docs/reports
+- `prompts/02_continue_cycle.md` — run one batch
+- `prompts/03_repair_batch_consistency.md` — repair missing mirrored docs/reports
 - `prompts/04_final_verify_project.md` — final pass to verify all source files, mirror docs, reports, and statuses
 - `prompts/05_create_rebuild_plan.md` — optional generic clean-room rebuild planning prompt after final verification passes
 
