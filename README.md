@@ -36,3 +36,10 @@ python scripts/compact_resume_summary.py
 
 ## HOW TO USE THE PROMPTS AND RUN THE REVERSAL PROJECT
 - `HOW_TO_USE_THIS_AND_PROMPT.md` - copy/paste prompts for running the workflow in Claude Code
+
+## Quick Start
+
+1. Click **Use this template** or clone the repo.
+2. Put the source tree you want documented into `src/`.
+3. Open the project in VS Code with Claude Code.
+4. Start with: Open `HOW_TO_USE_THIS_AND_PROMPT.md` and just copy/paste the prompts into Claude Code, and compact as needed between batches.
