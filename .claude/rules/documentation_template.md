@@ -7,7 +7,7 @@ Use this for code/text/config files:
 
 Source file: `<source path>`
 Mirror doc: `<mirror path>`
-Project: `anything_reversal`
+Project: `project_atlas`
 Batch: `BATCH_####`
 Status: `Draft | Needs Verification | Verified | Needs Rework`
 Type: `<code/config/data/doc/etc>`
@@ -40,7 +40,7 @@ Use this for images, fonts, archives, binaries, and unknown files:
 
 Source file: `<source path>`
 Mirror doc: `<mirror path>`
-Project: `anything_reversal`
+Project: `project_atlas`
 Batch: `BATCH_####`
 Status: `Draft | Needs Verification | Verified | Needs Rework`
 Type: `<image asset/font asset/archive/binary asset/unknown binary asset/etc>`

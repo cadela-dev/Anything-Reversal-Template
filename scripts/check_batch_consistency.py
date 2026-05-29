@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check latest Anything Reversal batch for required mirror docs."""
+"""Check latest Project Atlas batch for required mirror docs."""
 from __future__ import annotations
 from pathlib import Path
 import argparse, re, sys

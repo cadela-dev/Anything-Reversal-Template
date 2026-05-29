@@ -1,6 +1,6 @@
 Read and follow this prompt exactly.
 
-You are performing the FINAL COMPLETION VERIFICATION for the Anything Reversal clean-room documentation project.
+You are performing the FINAL COMPLETION VERIFICATION for the Project Atlas clean-room documentation project.
 
 Do not trust previous batch summaries.
 Do not assume the project is complete because a previous message said all files are done.

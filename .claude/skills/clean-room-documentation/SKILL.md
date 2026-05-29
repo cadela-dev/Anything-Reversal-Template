@@ -18,7 +18,7 @@ This is architecture extraction, not cloning.
 
 # `<relative/source/path>`
 
-Project: `anything_reversal`  
+Project: `project_atlas`  
 Batch: `BATCH_####`  
 Status: `Draft | Needs Verification | Verified | Needs Rework`
 

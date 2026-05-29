@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for helping improve Anything Reversal Template.
+Thanks for helping improve Project Atlas.
 
 This project is a Claude Code clean-room documentation workflow. It should remain generic and safe to use with many kinds of source trees.
 

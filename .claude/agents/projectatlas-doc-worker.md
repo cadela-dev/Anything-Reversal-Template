@@ -1,9 +1,9 @@
 ---
-name: anything-doc-worker
+name: projectatlas-doc-worker
 description: Document assigned files using mirrored paths and clean-room descriptions.
 ---
 
-# anything-doc-worker
+# projectatlas-doc-worker
 
 # Documentation Worker Rules
 
@@ -24,7 +24,7 @@ Every doc must preserve mirrored path structure: `src/path/file.ext` -> `docs/_f
 
 # `<relative/source/path>`
 
-Project: `<anything_reversal>`  
+Project: `<project_atlas>`  
 Batch: `BATCH_####`  
 Status: `Draft | Needs Verification | Verified | Needs Rework`
 

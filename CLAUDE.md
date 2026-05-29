@@ -1,4 +1,4 @@
-# Anything Reversal Project Rules
+# Project Atlas Project Rules
 
 This project documents one arbitrary source tree in `src/` into clean-room, rebuild-oriented reference docs. It is not tied to any specific product type, framework, language, or codebase.
 

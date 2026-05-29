@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Inventory src/ for Anything Reversal."""
+"""Inventory src/ for Project Atlas."""
 from __future__ import annotations
 from pathlib import Path
 import argparse, mimetypes

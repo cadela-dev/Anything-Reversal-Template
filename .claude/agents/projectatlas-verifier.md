@@ -1,9 +1,9 @@
 ---
-name: anything-verifier
+name: projectatlas-verifier
 description: Validate worker outputs and update checklist state; never rewrite docs.
 ---
 
-# anything-verifier
+# projectatlas-verifier
 
 # Verifier Rules
 

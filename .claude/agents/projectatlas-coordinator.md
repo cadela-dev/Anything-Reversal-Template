@@ -1,9 +1,9 @@
 ---
-name: anything-coordinator
+name: projectatlas-coordinator
 description: Run planner, worker, verifier, architect loop until stop condition.
 ---
 
-# anything-coordinator
+# projectatlas-coordinator
 
 # Coordinator Rules
 

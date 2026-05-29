@@ -1,4 +1,4 @@
-# Anything Reversal Project
+# Project Atlas
 
 A Claude Code clean-room documentation workflow for turning any source tree into behavior-focused mirror docs, batch reports, verification reports, and optional clean-room rebuild planning.
 
@@ -10,7 +10,7 @@ This project is meant to help you understand how a codebase works without copyin
 
 ## What This Does
 
-Anything Reversal helps Claude Code work through a source tree in controlled batches.
+Project Atlas helps Claude Code work through a source tree in controlled batches.
 
 It will:
 
@@ -43,7 +43,7 @@ This project does **not**:
 
 - copy source code into the docs
 - make a perfect decompiler
-- guarantee legal permission to reverse anything
+- guarantee legal permission to inspect, document, or rebuild anything
 - automatically rebuild the project
 - replace human review
 - safely publish someone else’s private/proprietary source
@@ -55,7 +55,7 @@ Use it only on projects you have the right to inspect and document.
 ## Project Layout
 
 ```text
-anything-reversal-template/
+Project Atlas/
 ├── .claude/
 │   ├── agents/
 │   ├── rules/
@@ -244,7 +244,7 @@ Paste this into Claude Code:
 ```text
 Read `prompts/01_index_fresh_project.md` and execute it exactly.
 
-This is a fresh Anything Reversal project.
+This is a fresh Project Atlas project.
 
 Use `src/` as the only source tree.
 
