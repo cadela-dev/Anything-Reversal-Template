@@ -62,6 +62,8 @@ anything-reversal-template/
 │   └── skills/
 ├── assignments/
 │   └── .gitkeep
+├── clean_rebuild_plan/              # generated later by prompt 05
+├── clean_rebuild_plan_modified/     # optional, generated later by prompts 07–08
 ├── docs/
 │   ├── _file_docs/
 │   │   └── .gitkeep
@@ -72,7 +74,10 @@ anything-reversal-template/
 │   ├── 02_continue_cycle.md
 │   ├── 03_repair_batch_consistency.md
 │   ├── 04_final_verify_project.md
-│   └── 05_create_rebuild_plan.md
+│   ├── 05_create_rebuild_plan.md
+│   ├── 06_master_rebuild_plan_draft.md
+│   ├── 07_modify_master_rebuild_plan_draft.md
+│   └── 08_regenerate_clean_rebuild_plan_customized.md
 ├── scripts/
 ├── src/
 │   └── .gitkeep
@@ -155,6 +160,9 @@ The detailed workflow prompts live in `prompts/`.
 | `prompts/03_repair_batch_consistency.md` | Repair missing mirror docs/reports after a bad run |
 | `prompts/04_final_verify_project.md` | Final pass to verify all source files, mirror docs, reports, and statuses |
 | `prompts/05_create_rebuild_plan.md` | Optional generic clean-room rebuild planning prompt after final verification passes |
+| `prompts/06_master_rebuild_plan_draft.md` | Consolidate generated rebuild docs into one editable master plan |
+| `prompts/07_modify_master_rebuild_plan_draft.md` | Create a separate editable modified master plan |
+| `prompts/08_regenerate_clean_rebuild_plan_customized.md` | Regenerate customized rebuild docs from the modified master plan |
 
 ---
 
@@ -175,7 +183,7 @@ python scripts/compact_resume_summary.py
 
 ---
 
-# Quick Start
+## Quick Start
 
 1. Click **Use this template** or clone the repo.
 2. Put the source tree you want documented into `src/`.
@@ -189,7 +197,7 @@ python scripts/compact_resume_summary.py
 
 ---
 
-# Copy/Paste Prompts for Claude Code
+## Copy/Paste Prompts for Claude Code
 
 This project is designed so you do **not** need to paste huge instructions every time.
 
@@ -497,7 +505,210 @@ Stop after creating `clean_rebuild_plan/`.
 
 ---
 
-## Recommended Claude Code Rhythm
+## 8. Optional Rebuild Plan Customization Flow
+
+Prompts `06`, `07`, and `08` are optional.
+
+This customization flow is useful if the first rebuild plan is technically correct, but you want to change the project name, remove features, modernize the stack, simplify the scope, or change the implementation order before coding.
+
+Use them only if you want to customize the generated clean rebuild plan before using it as the source of truth for a new implementation.
+
+The normal rebuild planning prompt, `05_create_rebuild_plan.md`, creates:
+
+```text
+clean_rebuild_plan/
+```
+
+That folder contains the first generated rebuild plan.
+
+If you like that plan exactly as-is, you do **not** need prompts `06`, `07`, or `08`.
+
+If you want to edit the rebuild direction first, use this flow:
+
+```text
+05_create_rebuild_plan.md
+→ creates original clean_rebuild_plan/
+
+06_master_rebuild_plan_draft.md
+→ consolidates clean_rebuild_plan/ into one editable master file
+
+07_modify_master_rebuild_plan_draft.md
+→ copies that master into clean_rebuild_plan_modified/
+
+08_regenerate_clean_rebuild_plan_customized.md
+→ regenerates customized planning files from the modified master
+```
+
+This gives you both:
+
+```text
+clean_rebuild_plan/
+```
+
+and:
+
+```text
+clean_rebuild_plan_modified/
+```
+
+The original plan stays untouched, while the modified plan becomes your edited/custom version.
+
+---
+
+## 8A. Create Master Rebuild Plan Draft
+
+Use this after prompt `05_create_rebuild_plan.md` has created `clean_rebuild_plan/`.
+
+Paste this into Claude Code:
+
+```text
+Read `prompts/06_master_rebuild_plan_draft.md` and execute it exactly.
+
+Do not read `src/`.
+
+Use only the generated planning files inside:
+
+`clean_rebuild_plan/`
+
+Create:
+
+`clean_rebuild_plan/MASTER_REBUILD_PLAN_DRAFT.md`
+
+This master draft should consolidate the generated planning files into one editable planning document.
+
+Do not overwrite the original `clean_rebuild_plan/00–12` files.
+
+Do not create implementation code.
+
+Stop after creating the master rebuild plan draft.
+```
+
+After this finishes, review:
+
+```text
+clean_rebuild_plan/MASTER_REBUILD_PLAN_DRAFT.md
+```
+
+---
+
+## 8B. Create Editable Modified Master Plan
+
+Use this only if you want to customize the rebuild plan before generating final customized planning files.
+
+Paste this into Claude Code:
+
+```text
+Read `prompts/07_modify_master_rebuild_plan_draft.md` and execute it exactly.
+
+Do not read `src/`.
+
+Use only:
+
+`clean_rebuild_plan/MASTER_REBUILD_PLAN_DRAFT.md`
+
+Create:
+
+`clean_rebuild_plan_modified/`
+
+Copy the master draft to:
+
+`clean_rebuild_plan_modified/MODIFIED_MASTER_REBUILD_PLAN_DRAFT.md`
+
+Do not generate modified 00–12 planning files yet.
+
+Stop after creating the modified master copy and README.
+```
+
+After this finishes, manually edit:
+
+```text
+clean_rebuild_plan_modified/MODIFIED_MASTER_REBUILD_PLAN_DRAFT.md
+```
+
+Use this file to change things like:
+
+* project name
+* repo name
+* tech stack
+* project structure
+* features to remove
+* features to add
+* implementation order
+* rebuild priorities
+* optional systems
+* risk/legal wording
+* first implementation round
+
+---
+
+## 8C. Regenerate Customized Rebuild Plan
+
+Use this after you have manually edited:
+
+```text
+clean_rebuild_plan_modified/MODIFIED_MASTER_REBUILD_PLAN_DRAFT.md
+```
+
+Paste this into Claude Code:
+
+```text
+Read `prompts/08_regenerate_clean_rebuild_plan_customized.md` and execute it exactly.
+
+Do not read `src/`.
+
+Use only:
+
+`clean_rebuild_plan_modified/MODIFIED_MASTER_REBUILD_PLAN_DRAFT.md`
+
+Treat the modified master plan as the only source of truth.
+
+Regenerate the customized planning files inside:
+
+`clean_rebuild_plan_modified/`
+
+Do not overwrite the original files in:
+
+`clean_rebuild_plan/`
+
+Do not create implementation code.
+
+Stop after creating the customized planning files and regeneration summary.
+```
+
+Expected output:
+
+```text
+clean_rebuild_plan_modified/
+├── README.md
+├── MODIFIED_MASTER_REBUILD_PLAN_DRAFT.md
+├── 00_README.md
+├── 01_REBUILD_SCOPE.md
+├── 02_TECH_STACK.md
+├── 03_PROJECT_STRUCTURE_PLAN.md
+├── 04_DATA_AND_STATE_PLAN.md
+├── 05_CORE_BOOTSTRAP_PLAN.md
+├── 06_MODULE_AND_FEATURE_PLAN.md
+├── 07_INTEGRATION_AND_FLOW_PLAN.md
+├── 08_INTERFACE_OR_UI_PLAN.md
+├── 09_SUBSYSTEM_ORDER.md
+├── 10_TESTING_AND_VALIDATION_PLAN.md
+├── 11_OPEN_QUESTIONS.md
+├── 12_IMPLEMENTATION_ROADMAP.md
+└── REGENERATION_SUMMARY.md
+```
+
+After this, use:
+
+```text
+clean_rebuild_plan_modified/
+```
+
+as the source of truth for the changed/customized rebuild.
+
+
+---
+
+## 9. Recommended Claude Code Rhythm
 
 Use this rhythm:
 
@@ -529,7 +740,7 @@ NEXT_ASSIGNMENT.md handoff
 
 ---
 
-## Minified, Packed, and Obfuscated Files
+## 10. Minified, Packed, and Obfuscated Files
 
 Do not trust line count alone.
 
@@ -552,7 +763,7 @@ Mirror docs for these files should clearly say when behavior is inferred.
 
 ---
 
-## What Not To Do
+## 11. What Not To Do
 
 Do not tell Claude to:
 
