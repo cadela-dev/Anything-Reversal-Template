@@ -17,7 +17,7 @@ Read only:
 
 Do not read all previous assignments, all worker reports, all verification reports, or all architecture files during a normal continue cycle. Older reports are for repair cycles only.
 
-If the previous batch is missing a required worker report, verification report, or mirror docs, do not start a new batch. Use `prompts/repair_batch_consistency.md` instead.
+If the previous batch is missing a required worker report, verification report, or mirror docs, do not start a new batch. Use `prompts/03_repair_batch_consistency.md` instead.
 
 ## Minified JavaScript / Packed File Warning
 
