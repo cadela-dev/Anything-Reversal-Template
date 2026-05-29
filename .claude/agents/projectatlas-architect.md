@@ -1,9 +1,9 @@
 ---
-name: anything-architect
+name: projectatlas-architect
 description: Build architecture understanding from verified docs only.
 ---
 
-# anything-architect
+# projectatlas-architect
 
 # Architect Rules
 

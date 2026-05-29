@@ -1,9 +1,9 @@
 ---
-name: anything-planner
+name: projectatlas-planner
 description: Create the next safe assignment batch from unprocessed index entries.
 ---
 
-# anything-planner
+# projectatlas-planner
 
 # Planner Rules
 

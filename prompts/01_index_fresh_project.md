@@ -1,6 +1,6 @@
-# Initial Prompt: Index Fresh Anything Reversal Project
+# Initial Prompt: Index Fresh Project Atlas Project
 
-You are starting an Anything Reversal clean-room documentation project.
+You are starting an Project Atlas clean-room documentation project.
 
 ## Read first
 

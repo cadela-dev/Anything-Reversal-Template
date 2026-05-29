@@ -1,8 +1,8 @@
 Read and follow this prompt exactly.
 
-You are starting the CLEAN-ROOM REBUILD PLANNING phase for the Anything Reversal project.
+You are starting the CLEAN-ROOM REBUILD PLANNING phase for the Project Atlas project.
 
-The reversal phase is complete.
+The documentation/mapping phase is complete.
 Final verification should already be complete or nearly complete.
 
 Important clean-room boundary:
@@ -25,7 +25,7 @@ If `verification_reports/SMART_REBUILD_READINESS_AUDIT.md` exists, read it too.
 
 Do not write implementation code yet.
 
-Your job is to create a clean-room rebuild plan for whatever project was reversed.
+Your job is to create a clean-room rebuild plan for whatever project was documented .
 
 Do not assume the project is a Discord bot, web app, game, CLI tool, library, plugin, or service unless the documentation proves it.
 
@@ -53,7 +53,7 @@ Inside it, create these files:
 
 # Required planning behavior
 
-Use the verified reversal documentation to infer the safest clean rebuild strategy.
+Use the verified ProjectAtlas documentation to infer the safest clean rebuild strategy.
 
 Do not blindly mirror the original structure if a cleaner structure would be better.
 
@@ -95,13 +95,13 @@ Define:
 * assumptions
 * what parts are known versus inferred
 
-Use the reversed project docs to determine scope.
+Use the documented project notes to determine scope.
 
 Do not assume any specific technology or product type.
 
 ## `02_TECH_STACK.md`
 
-List the recommended stack based on the reversed project.
+List the recommended stack based on the documented project.
 
 Include:
 
@@ -185,7 +185,7 @@ Include only relevant items:
 
 ## `06_MODULE_AND_FEATURE_PLAN.md`
 
-Plan the major modules and features discovered in the reversal docs.
+Plan the major modules and features discovered in the ProjectAtlas docs.
 
 For each module/feature:
 

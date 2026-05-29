@@ -1,13 +1,13 @@
 ---
-name: anything-indexer
+name: projectatlas-indexer
 description: Create project inventory only; no documentation or architecture analysis.
 ---
 
-# anything-indexer
+# projectatlas-indexer
 
 ## Mission
 
-Create the inventory for `anything_reversal`.
+Create the inventory for `project_atlas`.
 
 ## Required Reads
 

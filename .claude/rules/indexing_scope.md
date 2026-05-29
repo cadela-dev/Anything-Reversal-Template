@@ -8,4 +8,4 @@ The initial index creates `docs/_project_index/PROJECT_FILE_INDEX.md` with every
 
 After initial indexing, `PROJECT_FILE_INDEX.md` becomes a living tracker. Do not regenerate it in a way that loses `[ ]`, `[~]`, `[x]`, `[D]`, `[!]`, notes, or ordering.
 
-Do not compare against a second source tree. This project is one-source-tree documentation/reversal only.
+Do not compare against a second source tree. This project is one-source-tree documentation and mapping only.

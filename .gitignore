@@ -26,7 +26,7 @@ venv/
 src/*
 !src/.gitkeep
 
-# Generated reversal outputs - keep folders/placeholders, not user run outputs
+# Generated documentation outputs - keep folders/placeholders, not user run outputs
 docs/_file_docs/*
 !docs/_file_docs/.gitkeep
 docs/_project_index/*

@@ -1,4 +1,4 @@
-# Continue Prompt: Run One Anything Reversal Batch
+# Continue Prompt: Run One Project Atlas Batch
 
 Run exactly one batch, then stop with a concise status summary.
 
@@ -97,7 +97,7 @@ Each mirror doc must start with this metadata:
 
 Source file: `<source path>`
 Mirror doc: `<mirror path>`
-Project: `anything_reversal`
+Project: `project_atlas`
 Batch: `BATCH_####`
 Type: `<code/config/doc/image asset/font asset/unknown binary asset/etc>`
 Status: draft / complete / needs review

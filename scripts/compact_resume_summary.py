@@ -8,7 +8,7 @@ def latest(folder, pat):
     xs=[p for p in xs if 'TEMPLATE' not in p.name]
     return xs[-1].relative_to(ROOT).as_posix() if xs else 'none'
 
-print('Anything Reversal resume context:')
+print('Project Atlas resume context:')
 print('- Re-read CLAUDE.md before continuing.')
 print('- Do not start a new batch unless previous verification is PASS.')
 print(f'- Latest assignment: {latest("assignments", "BATCH_*.md")}')

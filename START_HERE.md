@@ -1,4 +1,4 @@
-# Start Here: Anything Reversal
+# Start Here: Project Atlas
 
 This folder is a ready-to-use clean-room documentation workflow for any source code project.
 
@@ -7,11 +7,11 @@ This folder is a ready-to-use clean-room documentation workflow for any source c
 1. Put the target project files inside `src/`.
 2. In Claude Code / VS Code, run the initial indexing prompt:
    - Paste `prompts/01_index_fresh_project.md`, or
-   - Use the project skill `.claude/skills/index-anything-reversal/SKILL.md` if your Claude Code setup exposes skills.
+   - Use the project skill `.claude/skills/index-fresh-project/SKILL.md` if your Claude Code setup exposes skills.
 3. After indexing finishes, compact if you want.
 4. Run the continue prompt:
    - Paste `prompts/02_continue_cycle.md`, or
-   - Use `.claude/skills/continue-anything-reversal/SKILL.md`.
+   - Use `.claude/skills/continue-batch-cycles/SKILL.md`.
 5. Compact between batches as needed.
 6. If anything gets weird, run `prompts/03_repair_batch_consistency.md`.
 
